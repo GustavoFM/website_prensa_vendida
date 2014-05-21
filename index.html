@@ -4,38 +4,103 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Prensa vendida</title>
-	<link href='http://fonts.googleapis.com/css?family=Cousine:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
 	<div id="contenedor">
-		<header><h1>Prensa vendida</h1></header>
+		<header>
+			<div id="titulo_cabecera"><h1><span class="negro">prensa</span> <span class="roja">vendida</h1></div>
+			<div id="img_cabecera">
+				<figure id="img_seccion_cabecera">
+					<img src="imgs/modotti.jpg" alt="">
+				</figure>
+			</div>
+			<div id="fechador"><span id="texto_fechador">13 de mayo 2014</span></div>
+		</header>
 		<div id="bloque_superior">
 		<section id="seccion_portada">
+			<!-- IMAGEN Y NOTA DE PORTADA -->
 			<figure id="img_seccion_portada">
-				<img src="imgs/fotodia.jpg" alt="">
+				<img src="imgs/fotodia.jpg" alt="" source="">
 				<figcaption><h2>Forthwith flashes of actual flame,</h2></figcaption>
 			</figure>
 			<article id="portada" class="noti_principal">
+					<div class="caja_fecha_nota"><span class="dia_nota">13</span><span class="mes_nota"> MAY</span><span class="agno_nota"> 2014</span></div>
+					<div class="credito">Por <span class="autor_nota"> Gustavo Flores </span> | Foto: <span class="autor_foto">Ghis Alexis</span></div>
 				<p>Forthwith flashes of actual flame, a bright glare leaping from one to another, sprang from the scattered group of men.  It was as if some invisible jet impinged upon them and flashed into white flame.  It was as if each man were suddenly and momentarily turned to fire.</p>
 			</article>
+			<!-- BLOQUE DE NOTAS -->
 			<div class="notas">
+				<!-- NOTA 1 -->
 				<article id="nota1" class="noti_principal">
-					<h2 class="encabezados">Nota 1</h2>
+					<h2 class="encabezados">nota 1</h2>
+					<!-- TAG FECHA Y CRÉDITO -->
+					<div class="caja_fecha_y_credito">
+						<div class="caja_fecha_nota"><span class="dia_nota">13</span><span class="mes_nota"> MAY</span><span class="agno_nota"> 2014</span></div>
+						<div class="credito izquierda">Por <span class="autor_nota"> Gustavo Flores </span> <br> Foto: <span class="autor_foto">Ghis Alexis</span></div>
+						<div class="ajustar"></div>
+					</div>
+					<!-- IMAGEN NOTA 1 -->
+					<figure class="img_notas">
+						<img src="imgs/img_nota1.jpg" alt="">
+					</figure>
+					<!-- TEXTO NOTA 1 -->
 					<p>Beyond the pit stood the little wedge of people with the white flag at its apex, arrested by these phenomena, a little knot of small vertical black shapes upon the black ground.  As the green smoke arose, their faces flashed out pallid green, and faded again as it vanished. Then slowly the hissing passed into a humming, into a long, loud, droning noise.  Slowly a humped shape rose out of the pit, and the ghost of a beam of light seemed to flicker out from it.</p>
 					<p>Forthwith flashes of actual flame, a bright glare leaping from one to another, sprang from the scattered group of men.  It was as if some invisible jet impinged upon them and flashed into white flame.  It was as if each man were suddenly and momentarily turned to fire.</p>
 				</article>
-				<div id="division">x</div>
+				<div id="division"></div>
+				<!-- NOTA 2 -->
 				<article id="nota2" class="noti_principal">
-					<h2 class="encabezados">Nota 2</h2>
+					<h2 class="encabezados">nota 2</h2>
+					<!-- TAG FECHA Y CRÉDITO -->
+					<div class="caja_fecha_y_credito">
+						<div class="caja_fecha_nota"><span class="dia_nota">20</span><span class="mes_nota"> MAY</span><span class="agno_nota"> 2014</span></div>
+						<div class="credito izquierda">Por <span class="autor_nota"> Gustavo Flores </span> <br> Foto: <span class="autor_foto">Ghis Alexis</span></div>
+						<div class="ajustar"></div>
+					</div>
+					<!-- IMAGEN NOTA 2 -->
+					<figure class="img_notas">
+						<img src="imgs/img_nota2.jpg" alt="">
+					</figure>
 					<p>Then, by the light of their own destruction, I saw them staggering and falling, and their supporters turning to run.</p>
 					<p>I stood staring, not as yet realising that this was death leaping from man to man in that little distant crowd.  All I felt was that it was something very strange.  An almost noiseless and blinding flash of light, and a man fell headlong and lay still; and as the unseen shaft of heat passed over them, pine trees burst into fire, and every dry furze bush became with one dull thud a mass of flames.  And far away towards Knaphill I saw the flashes of trees and hedges and wooden buildings suddenly set alight.</p>
 				</article>	
 			</div>
 		</section>
+		<!-- COLUMNAS: LIBRE INSERCIÓN -->
 		<aside id="libre_insercion">
-			<article id="noti_libre_insercion">
-				<h3 class="encabezados">Libre inserción</h3>
+			<!-- REDES SOCIALES -->
+			<div class="redes_sociales">
+				<div class="iconos_redes_sociales">
+					<!--<a href=""><i class="fa fa-twitter-square fa-3x"></i></a>
+					<a href=""><i class="fa fa-facebook-square fa-3x"></i></a>
+					<a href=""><i class="fa fa-youtube-square fa-3x"></i></a>-->
+					<a href=""><i class="fa fa-twitter fa-2x"></i></a>
+					<a href="https://www.facebook.com/prensavendida"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href=""><i class="fa fa-youtube fa-2x"></i></a>
+				</div>
+			</div>
+			<div id="titulo_libre_insercion"><h2>libre inserción</h2></div>
+			<!-- COLUMNA: OJO DE GATO -->
+			<article id="columna_ojo_de_gato" class="columnas_libre_insercion">
+				<h3 class="encabezados">ojo de gato</h3>
+					<div class="caja_fecha_y_credito">
+					<div class="caja_fecha_nota"><span class="dia_nota">13</span><span class="mes_nota"> MAY</span><span class="agno_nota"> 2014</span></div>
+					<div class="credito">Por <span class="autor_nota"> Guillermo Manzano </span> <!--<br> Foto: <span class="autor_foto"></span>--></div>
+					<div class="ajustar"></div>
+					</div>
+				<p>Then, by the light of their own destruction, I saw them staggering and falling, and their supporters turning to run.</p>
+			</article>
+			<!-- COLUMNA: RÚBRICA -->
+			<article id="columna_rubrica" class="columnas_libre_insercion">
+				<h3 class="encabezados">rúbrica</h3>
+					<div class="caja_fecha_y_credito">
+					<div class="caja_fecha_nota"><span class="dia_nota">11</span><span class="mes_nota"> ABR</span><span class="agno_nota"> 2014</span></div>
+					<div class="credito">Por <span class="autor_nota"> Aurelio Contreras Moreno </span> <!--<br> Foto: <span class="autor_foto"></span>--></div>
+					<div class="ajustar"></div>
+					</div>
 				<p>Then, by the light of their own destruction, I saw them staggering and falling, and their supporters turning to run.</p>
 			</article>
 		</aside>
@@ -44,20 +109,22 @@
 		</div>
 		<div id="bloque_inferior">
 			<section id="seccion_basurero">
-				<div id="titulo_basurero"><h2>Basurero</h2></div>
+				<div id="titulo_basurero"><h2>basurero</h2></div>
 				<div id="articulos">
 					<article id="xalapa">
-						<h3 class="encabezados">Xalapa</h3>
+						<h3 class="encabezados">ayuntamientos</h3>
+						<!-- INICIO SECCIÓN DE CONTENIDO XALAPA -->
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-						<p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. </p>
+						<!-- FIN SECCIÓN DE CONTENIDO XALAPA -->
 					</article>
+					
 					<article id="ejecutivo">
-						<h3 class="encabezados">Ejecutivo</h3>
+						<h3 class="encabezados">poder ejecutivo</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
 						<p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. </p>
 					</article>
 					<article id="legislativo">
-						<h3 class="encabezados">Legislativo</h3>
+						<h3 class="encabezados">poder legislativo</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
 						<p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. </p>
 					</article>
@@ -65,15 +132,21 @@
 			</section>
 			<aside id="secciones">
 				<div id="noti_secciones">
-					<h3 class="encabezados">Secciones</h3>
+					<h3 class="encabezados">secciones</h3>
 					<ul>
-						<a href=""><li>Gente normal</li></a>
-						<a href=""><li>A pie de calle</li></a>	
-						<a href=""><li>Trazos</li></a>
+						<a href=""><li>gente normal</li></a>
+						<a href=""><li>a pie de calle</li></a>	
+						<a href=""><li>trazos</li></a>
 					</ul>
 				</div>
 			</aside>
 		</div>
+		<footer>
+			<!--<div id="desarrollador">
+				<span class="texto_pie">Desarrollado por @laRanaBinaria</span>
+				<img id="img_desarrollador" src="imgs/laRanaBinariaSp.png" alt="">
+			</div>-->
+		</footer>
 	</div>
 </body>
 </html>
